@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unknown-property */
+
 import BTN from "../Components/BTN/BTN";
 // import img1 from "../../public/images/images1.png";
 // import img2 from "../../public/images/images2.png";
@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <section className=" flex items-center mx-auto w-full h-screen  py-8 sm:flex-col mt-[70px]" >
-      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[90vh] my-auto sm:pt-16  md:pt-12 ">    
+      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[90vh]  sm:pt-16  md:pt-12 ">    
         {/* Left Section */}
         <div className="left sm:flex sm:flex-col w-full lg:w-1/2 px-4 lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
           <div className="my-auto flex flex-col md:gap-[70px] sm:gap-[40px]">

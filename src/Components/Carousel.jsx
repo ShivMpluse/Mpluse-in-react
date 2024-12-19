@@ -4,9 +4,9 @@ import CardData from "../CardData/CardData.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import profile from '../../public/images/profile.jpg'
+import profile from '../../public/images/profile.jpg';
 
-const Carousel = () => {
+function Carousel() {
   const settings = {
     dots: true, // Enable dots below the slider
     infinite: true, // Loop slides infinitely
@@ -42,16 +42,16 @@ const Carousel = () => {
       <div className="container sm:mx-auto ">
         <div className="page3 w-full xl:mx-auto lg:mx-auto  mt-10">
           <div className=" py-10 flex flex-col gap-8">
-              <h1 className="lg:text-6xl sm:text-2xl text-transparent  text-blue-950 bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">
-                Mpluse Fintech Pvt Ltd: Simplifying Your Financial Journey
-                Assistance with Seamless Financial Solutions.
-              </h1>
-              <p className="lg:text-2xl md:text-xl sm:text-lg text-black">
-                At MPLuse Fintech Pvt Ltd, we offer unparalleled services to ensure 
-                a seamless financial experience for all our clients. Our tailored 
-                solutions are designed to cater to the diverse needs of individuals 
-                and businesses, empowering them to achieve their financial goals. 
-              </p>
+            <h1 className="lg:text-6xl sm:text-2xl text-transparent  text-blue-950 bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">
+              Mpluse Fintech Pvt Ltd: Simplifying Your Financial Journey
+              Assistance with Seamless Financial Solutions.
+            </h1>
+            <p className="lg:text-2xl md:text-xl sm:text-lg text-black">
+              At MPLuse Fintech Pvt Ltd, we offer unparalleled services to ensure
+              a seamless financial experience for all our clients. Our tailored
+              solutions are designed to cater to the diverse needs of individuals
+              and businesses, empowering them to achieve their financial goals.
+            </p>
           </div>
         </div>
       </div>
@@ -65,8 +65,7 @@ const Carousel = () => {
                     <img
                       src={profile}
                       alt={data.name}
-                      className="p-4 h-28 w-28 object-cover border border-black rounded-full"
-                    />
+                      className="p-4 h-28 w-28 object-cover border border-black rounded-full" />
                   </div>
                   <div className="flex flex-col bg-slate-300 justify-center items-center gap-4 p-4 ">
                     <h3 className="text-2xl text-black">{data.name}</h3>
@@ -83,6 +82,6 @@ const Carousel = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Carousel;

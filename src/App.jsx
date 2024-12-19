@@ -5,6 +5,7 @@ import Navigation from "./Components/Navigation"
 import hero from '../public/images/hero.webp'
 import AboutSection from "./Components/AboutSection"
 import Carousel from "./Components/Carousel"
+import NextPage from "./Components/NextPage"
 // import Slides from "./Components/Slides"
 
 
@@ -21,6 +22,7 @@ function App() {
       </div>
       <AboutSection />
       <Carousel />
+      <NextPage />
     </div>
   )
 }
