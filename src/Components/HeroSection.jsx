@@ -4,10 +4,10 @@ import BTN from "../Components/BTN/BTN";
 import gsap from "gsap";
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import card from '../../public/images/Group 35887.png';
-import blur from '../../public/images/blur.png'
-import star from '../../public/images/star-3.png'
-import phone from '../../public/images/iPhone-13-Pro-Front.png'
-import { useGSAP } from '@gsap/react'
+import blur from '../../public/images/blur.png';
+import star from '../../public/images/star-3.png';
+import phone from '../../public/images/iPhone-13-Pro-Front.png';
+import { useGSAP } from '@gsap/react';
 import { useRef } from "react";
 
 
