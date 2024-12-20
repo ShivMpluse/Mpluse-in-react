@@ -2,28 +2,29 @@ import About from "./Components/About/About"
 import HeroSection from "./Components/HeroSection"
 import Navigation from "./Components/Navigation"
 // import hero from '../../public/images/hero.webp'
-import hero from '../public/images/hero.webp'
+// import hero from '../public/images/hero.webp'
 import AboutSection from "./Components/AboutSection"
 import Carousel from "./Components/Carousel"
 import NextPage from "./Components/NextPage"
+import Testimonial from "./Components/Testimonial"
+import { Features } from "./Components/Features"
 // import Slides from "./Components/Slides"
 
+// style={{ backgroundImage: `url(${hero})`}}
 
 function App() {
 
   return (
-    <div className="">
-      <div className="nav" style={{ backgroundImage: `url(${hero})`}}>
+    <>
         <Navigation />
         <HeroSection  />
-      </div>
-      <div className="hero bg-white ">
         <About />
-      </div>
-      <AboutSection />
-      <Carousel />
-      <NextPage />
-    </div>
+        <AboutSection />
+        <Carousel />
+        <Testimonial />
+        <NextPage />
+        <Features />
+    </>
   )
 }
 
