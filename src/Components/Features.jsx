@@ -33,9 +33,9 @@ export const Features = () => {
         <div className="container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {card.map((value) => {
                 return(
-                    <div className="  flex flex-col gap-2 border-b-4" key={value.id}>
+                    <div className="  flex flex-col gap-2 " key={value.id}>
                         <div className="img">
-                            <img src={value.img_url} alt={value.title} className=" h-full w-full border-b-2"/>
+                            <img src={value.img_url} alt={value.title} className=" h-full w-full border-b-2 pb-1"/>
                         </div>
                         
                         <div className="flex justify-center items-center">

@@ -83,7 +83,7 @@ const HeroSection = () => {
         {/* Right Section */}
         <div className="relative lg:flex lg:w-1/2 w-full h-full lg:flex-row flex-col gap-4 px-4 lg:px-0 sm:hidden">
           <div className="max-h-[800px] max-w-[50px] min-h-[30px] min-[300px] pt-16 overflow-hidden">
-           
+            {/* Optional Lottie animation */}
           </div>
 
           {/* Card Image */}

@@ -8,6 +8,8 @@ import Carousel from "./Components/Carousel"
 import NextPage from "./Components/NextPage"
 import Testimonial from "./Components/Testimonial"
 import { Features } from "./Components/Features"
+import Questions from "./Components/Questions"
+import Footer from "./Components/Footer/Footer"
 // import Slides from "./Components/Slides"
 
 // style={{ backgroundImage: `url(${hero})`}}
@@ -24,6 +26,8 @@ function App() {
         <Testimonial />
         <NextPage />
         <Features />
+        <Questions />
+        <Footer />
     </>
   )
 }
