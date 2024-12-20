@@ -108,7 +108,7 @@ const HeroSection = () => {
               className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40"
             />
           </div>
-            <img src={star} alt="star" className="bottom-6 right-0 absolute" ref={backLightRef}/>
+            <img src='/images/star-3.png"' alt="star" className="bottom-6 right-0 absolute" ref={backLightRef}/>
         </div>
 
 
