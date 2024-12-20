@@ -5,7 +5,7 @@ import gsap from "gsap";
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import card from '../../public/images/Group 35887.png';
 import blur from '../../public/images/blur.png';
-import star from '../../public/images/star-3.png';
+import star from '../../public/images/Star-3.png';
 import phone from '../../public/images/iPhone-13-Pro-Front.png';
 import { useGSAP } from '@gsap/react';
 import { useRef } from "react";
@@ -108,7 +108,7 @@ const HeroSection = () => {
               className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40"
             />
           </div>
-            <img src='/images/star-3.png"' alt="star" className="bottom-6 right-0 absolute" ref={backLightRef}/>
+            <img src={star} alt="star" className="bottom-6 right-0 absolute" ref={backLightRef}/>
         </div>
 
 
