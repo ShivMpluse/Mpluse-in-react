@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { CgMathMinus } from "react-icons/cg";
+import styled from 'styled-components';
 
 const questions = [
     {
@@ -48,15 +49,15 @@ const Questions = () => {
                 return(
                     <div className="border sm:mx-4 md:mx-4 shadow-sm px-8 py-4 rounded-lg" key={data.id}>
                         <div className="cursor-pointer text-black flex justify-between " onClick={()=>handleShow(data.id)}>
-                            <h3 className="text-lg poppins-medium">{data.Questions}</h3>
-                            {isOpen === data.id ? (<IoMdAdd className='text-2xl'/>): (<CgMathMinus className='text-2xl'/>)
+                            <H1 className="text-lg poppins-medium">{data.Questions}</H1>
+                            {isOpen === data.id ? (<CgMathMinus className='text-2xl'/>): (<IoMdAdd className='text-2xl'/>)
                             }
                                 
                         </div>
                         <div className={`answer text-black  flex-col gap-2 duration-700 ease-linear ${isOpen === data.id ? 'flex ': 'hidden'} duration-700`}>
-                            <h2 className="font-bold">Answer :-</h2>
+                            <H1 className="font-bold">Answer :-</H1>
                             <div className="w-full h-[2px] bg-gradient-to-r from-[#F8DA8A] to-pink-500"></div>
-                            <p className=" text-sm ">{data.Answer}</p>  
+                            <P className=" text-sm ">{data.Answer}</P>  
                         </div>
                     </div>
                 )
@@ -67,3 +68,13 @@ const Questions = () => {
 }
 
 export default Questions
+
+
+const P = styled.p`
+    font-size: 15px;
+    font-weight: 100;
+`
+const H1 = styled.h1`
+    font-weight: 200;
+    font-family: 'roboto';
+`

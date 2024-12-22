@@ -9,7 +9,8 @@ import star from '../../public/images/Star-3.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useRef } from 'react'
-
+import styled from 'styled-components'
+ 
 const Testimonial = () => {
 
   const starRef = useRef()
@@ -42,7 +43,7 @@ const Testimonial = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div className="relative sm:hidden md:flex justify-center items-center">
-          <div className="test absolute top-0 left-0">
+          <div className="test absolute top-0 left-10">
             <img src={star} alt="star" ref={starRef} className='star z-50'/>
           </div>
           
@@ -66,12 +67,12 @@ const Testimonial = () => {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-black leading-snug">
                 The best Financial Accounting App Ever!
               </h2>
-              <p className="text-sm md:text-base lg:text-lg pr-0 md:pr-16">
+              <Para className="text-sm md:text-base lg:text-lg pr-0 md:pr-16">
                 “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
                 In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit.
                 Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem
                 sapien, suspendisse aliquam.”
-              </p>
+              </Para>
             </div>
 
             {/* Profile Images */}
@@ -88,7 +89,7 @@ const Testimonial = () => {
 
             {/* Profile Name */}
             <p className="font-bold mt-4 text-base md:text-lg">Nick Jonas</p>
-            <div className="test absolute bottom-0 right-0">
+            <div className="test absolute bottom-0 right-12">
               <img src={star} alt="star" ref={starRef} className='star z-50'/>
             </div>
           </div>
@@ -101,3 +102,10 @@ const Testimonial = () => {
 }
 
 export default Testimonial
+
+
+const Para = styled.p`
+  font-family: 'poppins', sans-serif, 'roboto';
+  font-weight: 200;
+  color: #333;
+`;

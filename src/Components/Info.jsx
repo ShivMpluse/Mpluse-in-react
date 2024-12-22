@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-// InfoSection.jsx
+
 const Info = () => {
     const fintechDetails = [
         {

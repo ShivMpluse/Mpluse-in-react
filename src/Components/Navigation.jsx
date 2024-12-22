@@ -2,9 +2,8 @@ import { useState } from "react";
 import logo from "../../public/images/788.png";
 import BTN from "./BTN/BTN";
 import { MdOutlineMenu } from "react-icons/md";
-// import { gsap } from "gsap/gsap-core";
-// import { useEffect } from "react";
 import { MdOutlineClose } from "react-icons/md";
+import styled from "styled-components";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,17 +15,22 @@ const Navigation = () => {
   };
 
   
+const Section = styled.div`
+  /* color: red; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+`
   
  
 
   return (
-    <div className="nav mx-auto w-full z-50 flex h-28 justify-between sm:min-w-[320px]  px-4  backdrop-blur-[15px] bg-transparent fixed top-0">
+    <Section className="nav mx-auto w-full z-50 flex h-28 justify-between sm:min-w-[320px]  px-4  backdrop-blur-[15px] bg-transparent fixed top-0">
       <div  className="mx-auto flex justify-between w-full md:container px-4 ">
         {/* Logo */}
       <img src={logo} alt="logo" className="logo p-2 h-[60px]  md:flex lg:flex my-auto items-center " />
 
       {/* Menu */}
-      <div className="menu text-black flex font-semibold">
+      <Section className="menu text-black flex ">
         {/* Hamburger Menu Icon */}
         {/* <div className="toggleMenu"> */}
         {isClose ? 
@@ -49,7 +53,7 @@ const Navigation = () => {
           <li className="hover:border-b-2 border-black font-thin  box-border">About</li>
           <li className="hover:border-b-2 border-black font-thin  box-border">Services</li>
         </ul>
-      </div>
+      </Section>
 
       {/* Button */}
       <div className="my-auto hidden md:flex">
@@ -57,7 +61,7 @@ const Navigation = () => {
       </div>
       </div>
       
-    </div>
+    </Section>
   );
 };
 

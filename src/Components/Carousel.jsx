@@ -5,8 +5,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import profile from '../../public/images/profile.jpg';
+import { useGSAP } from "@gsap/react";
 
 function Carousel() {
+
+  useGSAP(() => {})
+
+
+
+
   const settings = {
     dots: true, // Enable dots below the slider
     infinite: true, // Loop slides infinitely
@@ -38,8 +45,8 @@ function Carousel() {
     ],
   };
   return (
-    <section className="bg-white">
-      <div className="container sm:mx-auto ">
+    <section className="carousel bg-white">
+      <div className="container lg:px-4 sm:mx-auto ">
         <div className="page3 w-full xl:mx-auto lg:mx-auto  mt-10">
           <div className=" py-10 flex flex-col gap-8">
             <h1 className="lg:text-6xl sm:text-2xl text-transparent  text-blue-950 bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">

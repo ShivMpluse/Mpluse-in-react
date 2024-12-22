@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       screens:{
-        'sm': '320px'
+        'sm': '320px',
+        // 'container': '80%',
       }
     },
   },

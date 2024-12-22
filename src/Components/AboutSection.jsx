@@ -1,6 +1,8 @@
+
+import { useGSAP } from '@gsap/react'
 import card from '../../public/images/card-5.gif'
 import Increment from '../Components/Increment'
-
+import gsap from 'gsap'
 import { useEffect, useState } from "react"
 
 const AboutSection = () => {
@@ -15,13 +17,28 @@ const AboutSection = () => {
       
             return () => clearInterval(intervalId);
           }
-        }, [count]); 
+        }, [count]);
+        
+        // useGSAP(() => {
+        //     gsap.from('.about', {
+        //         // duration: 1,
+        //         opacity: 0,
+        //         ease: 'bounce.out',
+        //         scrollTrigger: {
+        //             trigger: ".about",
+        //             start: "top 70%",
+        //             end: "top 10%",
+        //             scrub: 1,
+        //             // markers: true,
+        //         }
+        //     });
+        // }, []);
 
 
 
   return (
     <section className="text-black md:mx-auto  mx-auto px-4 bg-white">
-        <div className="container mx-auto grid lg:grid-cols-2 sm:grid-cols-1 justify-between items-center flex-wrap sm:mx-auto">
+        <div className="container about mx-auto grid lg:grid-cols-2 sm:grid-cols-1 justify-between items-center flex-wrap sm:mx-auto">
             <div className="col grid grid-col-2 gap-4">
                 <div className="row1  gap-12 grid sm:grid-col-1 md:grid-cols-2">
                     <Increment title={count} description='Successful Admission' className='poppins-medium'/>
@@ -41,3 +58,4 @@ const AboutSection = () => {
 }
 
 export default AboutSection
+
