@@ -9,6 +9,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
 import { LuBookPlus } from "react-icons/lu";
+import styled from "styled-components";
 
 const Footer = () => {
   return (
@@ -82,6 +83,9 @@ const Footer = () => {
         </div>
         {/* <span className="text-black flex justify-center items-center mt-2">dfghj</span> */}
       </section>
+      <div className="container flex justify-center items-center text-black p-4 border">
+        <Copy className="text-sm ">© 2025 Mpluse. All Rights Reserved.</Copy>
+      </div>
 
     </>
     
@@ -89,3 +93,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const Copy = styled.div`
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+`
