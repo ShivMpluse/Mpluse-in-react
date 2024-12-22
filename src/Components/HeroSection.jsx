@@ -2,7 +2,7 @@
 import BTN from "../Components/BTN/BTN";
 import gsap from "gsap";
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import card from '../../public/images/Group 35887.png';
+import card from '../../public/images/1.png';
 import blur from '../../public/images/blur.png';
 import star from '../../public/images/Star-3.png';
 import phone from '../../public/images/iPhone-13-Pro-Front.png';
@@ -37,12 +37,12 @@ const HeroSection = () => {
       // scale: 0.2,
       // x: -500,
     })
-    gsap.from(".circle", {
-      rotate: 720,
-      duration: 8,
-      repeat: -1,
-      stagger: 3
-    })
+    // gsap.from(".circle", {
+    //   rotate: 720,
+    //   duration: 8,
+    //   repeat: -1,
+    //   stagger: 3
+    // })
   },[])
 
 
@@ -58,7 +58,7 @@ const HeroSection = () => {
             <h1 className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-black bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text z-20' >
               <span className="sm:mx-auto md:mx-auto lg:mx-auto poppins-medium">FinTech Enrollment and Advisory 2024-2025</span>
             </h1>
-            <Para className=" text-sm md:text-base lg:text-lg text-justify text-black/60  max-w-[500px]  poppins-medium">
+            <Para className=" text-sm md:text-base lg:text-lg text-justify text-black  max-w-[500px]  poppins-medium">
               Pursuing a career in finance is a dream for many, but the journey to 
               becoming a fintech professional is filled with challenges and critical 
               decisions that require expert guidance. At FinTech Wala, we provide 
@@ -87,12 +87,12 @@ const HeroSection = () => {
           </div>
 
           {/* Card Image */}
-          <div className="vfx relative rotate-[-10deg]">
-            <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[15%] translate-y-[25%] scale-150" />
+          <div className="vfx relative ">
+            {/* <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[15%] translate-y-[25%] scale-150" /> */}
             <img src={card} alt="circle" className="circle z-10 h-[550px] translate-x-[10%] translate-y-[-10%] scale-95" />
 
             
-            <img
+            {/* <img
               src={phone}
               alt="iphone"
               className=" absolute h-[700px] top-[-8%] left-[55%] translate-x-[-50%] z-30 scale-90"
@@ -106,7 +106,7 @@ const HeroSection = () => {
               src={phone}
               alt="iphone"
               className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40 scale-90"
-            />
+            /> */}
           </div>
           <div className="star">
             <img src={star} alt="star" className="bottom-6 right-10 absolute" ref={backLightRef}/>
