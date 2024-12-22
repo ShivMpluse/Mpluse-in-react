@@ -5,7 +5,7 @@ import gsap from "gsap";
 import card from '../../public/images/1.png';
 import blur from '../../public/images/blur.png';
 import star from '../../public/images/Star-3.png';
-import phone from '../../public/images/iPhone-13-Pro-Front.png';
+// import phone from '../../public/images/iPhone-13-Pro-Front.png';
 import { useGSAP } from '@gsap/react';
 import { useRef } from "react";
 import styled from "styled-components";
@@ -67,7 +67,7 @@ const HeroSection = () => {
             </Para>
             <div className="effect absolute  sm:top-[-50px] sm:left-[0]">
               <div className="eff  sm:h-64 sm:w-80 z-10  sm:top-[-50px] sm:left-[400px]">
-                <img src={blur} alt="eff" className="backlight top-[-600px] left-10 rotate-180"/>
+                <img src={blur} alt="eff" className="backlight top-[-600px] left-10 rotate-180 opacity-50"/>
               </div>
               <div className="star h-16 w-16">
                 <img src={star} alt="star" className="top-6 left-10 absolute" ref={backLightRef}/>
@@ -88,10 +88,8 @@ const HeroSection = () => {
 
           {/* Card Image */}
           <div className="vfx relative ">
-            {/* <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[15%] translate-y-[25%] scale-150" /> */}
+            <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[25%] translate-y-[8%] scale-150 opacity-50" />
             <img src={card} alt="circle" className="circle z-10 h-[550px] translate-x-[10%] translate-y-[-10%] scale-95" />
-
-            
             {/* <img
               src={phone}
               alt="iphone"
