@@ -89,23 +89,23 @@ const HeroSection = () => {
           {/* Card Image */}
           <div className="vfx relative rotate-[-10deg]">
             <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[15%] translate-y-[25%] scale-150" />
-            <img src={card} alt="circle" className="circle z-10 h-[550px] translate-x-[10%] translate-y-[-10%]" />
+            <img src={card} alt="circle" className="circle z-10 h-[550px] translate-x-[10%] translate-y-[-10%] scale-95" />
 
             
             <img
               src={phone}
               alt="iphone"
-              className=" absolute h-[700px] top-[-8%] left-[55%] translate-x-[-50%] z-30"
+              className=" absolute h-[700px] top-[-8%] left-[55%] translate-x-[-50%] z-30 scale-90"
             />
             <img
               src={phone}
               alt="iphone"
-              className=" absolute h-[700px] top-[-5%] left-[65%] translate-x-[-50%] z-20"
+              className=" absolute h-[700px] top-[-5%] left-[65%] translate-x-[-50%] z-20 scale-90"
             />
             <img
               src={phone}
               alt="iphone"
-              className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40"
+              className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40 scale-90"
             />
           </div>
           <div className="star">

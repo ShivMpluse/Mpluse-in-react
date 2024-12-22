@@ -4,6 +4,7 @@ import BTN from "./BTN/BTN";
 import { MdOutlineMenu } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
 import styled from "styled-components";
+import { useGSAP } from "@gsap/react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,9 @@ const Navigation = () => {
     setIsOpen((prevState) => !prevState); // Toggles the menu
     setIsClose(!isClose);
   };
+
+  useGSAP({ from: { opacity: 0 }, duration: 1, delay: 0.5 });
+
 
   
 const Section = styled.div`

@@ -13,9 +13,11 @@ import { LuBookPlus } from "react-icons/lu";
 const Footer = () => {
   return (
     <>
-      <section className="bg-gradient-to-r from-[#F8DA8A] to-pink-500 pb-16 mt-28">
-        <div className="mx-auto bg-white py-6">
-          <div className="container py-4 px-6 h-full md:rounded-b-full bg-white sm:mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center sm:gap-6 md:gap-2 sm:border-b-2 border md:border-0">
+      <section className="bg-gradient-to-r from-[#F8DA8A] to-pink-500  mt-28">
+        <div className="mx-auto bg-white py-6 ">
+          <div className="container py-4 px-6 h-full  sm:mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center sm:gap-6 md:gap-2 sm:border-b-2 border md:border-0">
+            
+            {/* First Column - Feedback Form */}
             <div className="col p-2 sm:px-2 sm:border-b-2 md:border-0">
               <img src={logo} alt="Mpluse Logo" className="h-[50px]" />
               <div className="form">
@@ -39,10 +41,14 @@ const Footer = () => {
                 </form>
               </div>
             </div>
+
+            {/* Second Column - Company Section */}
             <div className="col p-2 flex flex-col justify-center gap-6 sm:border-b-2 md:border-0">
               <h3 className="text-xl text-black">Company</h3>
               <p className="text-black">Privacy Policy</p>
             </div>
+
+            {/* Third Column - Contact Us Section */}
             <div className="col p-2 flex flex-col justify-items-center gap-6 sm:border-b-2 md:border-0">
               <h3 className="text-black text-xl font-bold">Contact Us</h3>
               <ul className="flex flex-col gap-3 text-black/80">
@@ -64,6 +70,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Fourth Column - Address Section */}
             <div className="col p-2 text-black flex flex-col gap-4 sm:border-b-2 md:border-0">
               <h3 className="text-xl">Address</h3>
               <p className="text-sm pr-8">
@@ -71,8 +79,10 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div><span className="text-black flex justify-center items-center mt-2">dfghj</span>
+        </div>
+        {/* <span className="text-black flex justify-center items-center mt-2">dfghj</span> */}
       </section>
+
     </>
     
   );
