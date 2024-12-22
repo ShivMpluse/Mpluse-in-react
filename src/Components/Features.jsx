@@ -4,7 +4,7 @@
 const card = [
     {
         id: 1, 
-        img_url: '../../public/images/img-5.png',
+        img_url: '../../public/images/img-6.png',
         title: 'Awarded by DGP of MP'
     },
     {
