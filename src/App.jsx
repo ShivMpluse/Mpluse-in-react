@@ -17,7 +17,7 @@ import Footer from "./Components/Footer/Footer"
 function App() {
 
   return (
-    <>
+    <section className="App">
         <Navigation />
         <HeroSection  />
         <About />
@@ -28,7 +28,7 @@ function App() {
         <Features />
         <Questions />
         <Footer />
-    </>
+    </section>
   )
 }
 

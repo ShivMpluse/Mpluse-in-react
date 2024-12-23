@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
         {/* <span className="text-black flex justify-center items-center mt-2">dfghj</span> */}
       </section>
-      <div className="container flex justify-center items-center text-black p-4 border">
+      <div className="container mx-auto flex justify-center items-center text-black p-4 border">
         <Copy className="text-sm ">© 2025 Mpluse. All Rights Reserved.</Copy>
       </div>
 

@@ -10,6 +10,9 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useRef } from 'react'
 import styled from 'styled-components'
+// import { ScrollTrigger } from 'gsap/all'
+
+// gsap.registerPlugin(ScrollTrigger)
  
 const Testimonial = () => {
 
@@ -18,14 +21,23 @@ const Testimonial = () => {
 
   useGSAP(()=> {
     gsap.to('.test ', {
-      rotate: 720,
-      repeat: -1,
-      duration: 6,
       // yoyo: true,
       stagger: 1,
       ease: 'pawer1.out',
       scale: 1
     })
+    // gsap.from('.test', {
+    //       // duration: 1,
+    //       opacity: 0,
+    //       ease: 'bounce.out',
+    //       scrollTrigger: {
+    //           trigger: ".about",
+    //           start: "top 80%",
+    //           end: "top 10%",
+    //           scrub: 1,
+    //           // markers: true,//for debugging
+    //       }
+    //   });
   },[])
 
 
@@ -33,7 +45,7 @@ const Testimonial = () => {
 
 
   return (
-    <section className='container mx-auto relative text-black mt-28'>
+    <section className='test container mx-auto relative text-black mt-28'>
       <div className="heading flex justify-center mx-auto">
           <h2 className="text-3xl">
             Whats Our Users Say About Up ?
@@ -43,9 +55,9 @@ const Testimonial = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div className="relative sm:hidden md:flex justify-center items-center">
-          <div className="test absolute top-0 left-10">
-            <img src={star} alt="star" ref={starRef} className='star z-50'/>
-          </div>
+            <div className="test absolute top-0 left-10 dr">
+              <img src={star} alt="star" ref={starRef} className='star z-50'/>
+            </div>
           
             {/* Circle Image */}
             <img
@@ -57,7 +69,7 @@ const Testimonial = () => {
             <img
               src={light}
               alt="light"
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex opacity-80"
             />
           </div>
 
@@ -105,7 +117,7 @@ export default Testimonial
 
 
 const Para = styled.p`
-  font-family: 'poppins', sans-serif, 'roboto';
+  font-family: 'poppins', sans-serif;
   font-weight: 200;
   color: #333;
 `;

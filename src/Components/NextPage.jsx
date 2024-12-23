@@ -5,6 +5,10 @@ import Info from './Info';
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const NextPage = () => {
+
+
+
+    
     return (
         <section className="mt-16 flex flex-col flex-wrap gap-8 overflow-x-hidden px-8 ">
             <div className="heading md:px-4 container mx-auto poppins-medium flex flex-col gap-2 w-full">

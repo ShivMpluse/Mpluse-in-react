@@ -4,6 +4,9 @@ import card from '../../public/images/card-5.gif'
 import Increment from '../Components/Increment'
 import gsap from 'gsap'
 import { useEffect, useState } from "react"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
 
 const AboutSection = () => {
 
@@ -26,10 +29,10 @@ const AboutSection = () => {
         //         ease: 'bounce.out',
         //         scrollTrigger: {
         //             trigger: ".about",
-        //             start: "top 70%",
+        //             start: "top 80%",
         //             end: "top 10%",
         //             scrub: 1,
-        //             // markers: true,
+        //             // markers: true,//for debugging
         //         }
         //     });
         // }, []);

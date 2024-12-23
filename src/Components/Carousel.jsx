@@ -5,11 +5,29 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import profile from '../../public/images/profile.jpg';
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Carousel() {
 
-  useGSAP(() => {})
+gsap.registerPlugin(ScrollTrigger);
+
+const Carousel = () => {
+
+  // useGSAP(() => {
+  //   gsap.from('.test', {
+  //     // duration: 1,
+  //     opacity: 0,
+  //     ease: 'bounce.out',
+  //     scrollTrigger: {
+  //       trigger: ".test",
+  //       start: "top 85%",
+  //       end: "top 10%",
+  //       scrub: 1,
+  //       markers: true,//for debugging
+  //     }
+  // });
+  // }, []); // Add this line to close the useGSAP hook
 
 
 
@@ -91,4 +109,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default Carousel
