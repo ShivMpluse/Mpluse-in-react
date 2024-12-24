@@ -1,3 +1,4 @@
+import styled from "styled-components";
 
 const Info = () => {
     const fintechDetails = [
@@ -39,7 +40,7 @@ const Info = () => {
                     </h2>
                     <ul className="list-disc pl-5">
                         {items.map((item, index) => (
-                            <li key={index} className="text-black/80 mt-2">{item}</li>
+                            <Li key={index} className="text-black mt-2">{item}</Li>
                         ))}
                     </ul>
                 </div>
@@ -49,3 +50,10 @@ const Info = () => {
 };
 
 export default Info;
+
+const Li = styled.li`
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+`

@@ -1,5 +1,5 @@
 
-import { useGSAP } from '@gsap/react'
+// import { useGSAP } from '@gsap/react'
 import card from '../../public/images/card-5.gif'
 import Increment from '../Components/Increment'
 import gsap from 'gsap'

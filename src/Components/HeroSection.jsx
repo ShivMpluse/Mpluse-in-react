@@ -50,8 +50,8 @@ const HeroSection = () => {
    const style = 'sm:w-full';
 
   return (
-    <section className="hero flex items-center mx-auto w-full h-screen  py-8 sm:flex-col mt-[70px]" >
-      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[90vh]  sm:pt-16  md:pt-12 ">    
+    <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[70px] my-auto" >
+      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] border-4 sm:pt-16  md:pt-12  mt-24">    
         {/* Left Section */}
         <div className="relative left sm:flex sm:flex-col w-full lg:w-1/2 px-4 lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
           <div className="my-auto flex flex-col md:gap-[70px] sm:gap-[40px] p-4">

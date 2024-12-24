@@ -11,13 +11,19 @@ const data = [
   { img: '../../../public/images/img5.png' },
   { img: '../../../public/images/img6.png' },
   { img: '../../../public/images/logo.png' },
-  { img: '../../../public/images/logo4.png' }
+  { img: '../../../public/images/logo.png' },
+  { img: '../../../public/images/logo4.png' },
+  { img: '../../../public/images/logo4.png' },
+  { img: '../../../public/images/img3.png' },
+  { img: '../../../public/images/img5.png' },
+  { img: '../../../public/images/img6.png' },
+  { img: '../../../public/images/logo.png' },
 ];
 
 function About() {
   useEffect(() => {
     gsap.to(".card", {
-      x: '-100px',
+      x: '-300px',
       duration: 2,
       yoyo: true,
       repeat: '-1',
@@ -25,21 +31,27 @@ function About() {
     });
   }, []);
 
-      useGSAP(() => {
-        gsap.from('.card', {
-          x: 100,
-          duration: 2,
-          // yoyo: true,
-          repeat: -1,
-          ease: 'bounce.out',
-        });
-      }, []);
+      // useGSAP(() => {
+      //   gsap.from(".card", {
+      //     x: '-300%', // Corrected `x` value to a relative translation
+      //     ease: 'power1.inOut',
+      //     scrollTrigger: {
+      //       scroller: 'body',
+      //       trigger: ".card",
+      //       start: "top 80%",
+      //       end: "bottom 20%",
+      //       scrub: 4, // Smooth animation tied to scroll
+      //       markers: true, // Debugging markers
+      //       pin: true, // Pins the element during the scroll
+      //     },
+      //   });
+      // }, []);
 
   return (
     <>
-      <div className="text-black container sm:mx-auto flex gap-16 my-12 overflow-hidden">
+      <div className="text-black card container sm:mx-auto flex gap-16 my-10 overflow-hidden ">
         {data.map((item, index) => (
-          <div className="flex card border h-16 w-64 p-2 overflow-hidden mx-auto" key={index}>
+          <div className="flex border h-16 w-64 p-2 overflow-hidden mx-auto" key={index}>
             <img src={item.img} alt="logo" />
           </div>
         ))}

@@ -8,6 +8,7 @@ import profile from '../../public/images/profile.jpg';
 // import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styled from "styled-components";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -67,16 +68,16 @@ const Carousel = () => {
       <div className="container lg:px-4 sm:mx-auto ">
         <div className="page3 w-full xl:mx-auto lg:mx-auto  mt-10">
           <div className=" py-10 flex flex-col gap-8">
-            <h1 className="lg:text-6xl sm:text-2xl text-transparent  text-blue-950 bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">
+            <h1 className="capitalize lg:text-6xl sm:text-2xl text-transparent drop-shadow-lg text-blue-950 bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">
               Mpluse Fintech Pvt Ltd: Simplifying Your Financial Journey
               Assistance with Seamless Financial Solutions.
             </h1>
-            <p className="lg:text-2xl md:text-xl sm:text-lg text-black">
+            <Para className="lg:text-2xl md:text-xl sm:text-lg text-black capitalize">
               At MPLuse Fintech Pvt Ltd, we offer unparalleled services to ensure
               a seamless financial experience for all our clients. Our tailored
               solutions are designed to cater to the diverse needs of individuals
               and businesses, empowering them to achieve their financial goals.
-            </p>
+            </Para>
           </div>
         </div>
       </div>
@@ -110,3 +111,10 @@ const Carousel = () => {
 }
 
 export default Carousel
+
+
+const Para = styled.p`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+`

@@ -10,16 +10,18 @@ import Testimonial from "./Components/Testimonial"
 import { Features } from "./Components/Features"
 import Questions from "./Components/Questions"
 import Footer from "./Components/Footer/Footer"
+import Animation from "./Components/Animation"
 // import Slides from "./Components/Slides"
 
 // style={{ backgroundImage: `url(${hero})`}}
 
 function App() {
 
-  return (
+  return (    
     <section className="App">
         <Navigation />
         <HeroSection  />
+        <Animation />
         <About />
         <AboutSection />
         <Carousel />

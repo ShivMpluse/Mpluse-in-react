@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import styled from "styled-components";
+
 
 const card = [
     {
@@ -30,7 +32,7 @@ export const Features = () => {
     return (
         <section className="container sm:mx-auto overflow-hidden sm:px-2">
             <div className="main">
-                <h1 className="text-transparent bg-gradient-to-r from-[#F5E197] to-[#E6217B] bg-clip-text"></h1>
+                <h1 className="text-transparent bg-gradient-to-r from-[#F5E197] to-[#E6217B] bg-clip-text"><span>ffffffddd</span></h1>
             </div>
             <div className="container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {card.map((value) => {
@@ -41,7 +43,7 @@ export const Features = () => {
                             </div>
 
                             <div className="flex justify-center items-center">
-                                <h2 className="text-2xl text-black">{value.title}</h2>
+                                <H2 className="text-xl text-black">{value.title}</H2>
                             </div>
                         </div>
                     );
@@ -50,3 +52,8 @@ export const Features = () => {
         </section>
     )
 }
+
+const H2 = styled.h2`
+    font-size: 20px;
+    font-weight: 500;
+`

@@ -22,22 +22,17 @@ const Testimonial = () => {
   useGSAP(()=> {
     gsap.to('.test ', {
       // yoyo: true,
-      stagger: 1,
+      // stagger: 1,
       ease: 'pawer1.out',
       scale: 1
     })
-    // gsap.from('.test', {
-    //       // duration: 1,
-    //       opacity: 0,
-    //       ease: 'bounce.out',
-    //       scrollTrigger: {
-    //           trigger: ".about",
-    //           start: "top 80%",
-    //           end: "top 10%",
-    //           scrub: 1,
-    //           // markers: true,//for debugging
-    //       }
-    //   });
+    gsap.from('.test .star', {
+          duration: 1,
+          opacity: 3,
+          repeat: -1,
+          rotate: 360,
+          yoyo: true,
+      });
   },[])
 
 
@@ -46,24 +41,25 @@ const Testimonial = () => {
 
   return (
     <section className='test container mx-auto relative text-black mt-28'>
-      <div className="heading flex justify-center mx-auto">
-          <h2 className="text-3xl">
+      <div className="heading flex flex-col gap-1 items-center mx-auto">
+          <h2 className="text-3xl capitalize font-semibold">
             Whats Our Users Say About Up ?
           </h2>
+          <div className="h-1 bg-gradient-to-r from-[#95F7AC] via-[#8647D7] to-[#4F28A7] w-[500px]"></div>
       </div>
       <div className="main ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column */}
-          <div className="relative sm:hidden md:flex justify-center items-center">
+          <div className="relative sm:hidden md:flex justify-center items-center ">
             <div className="test absolute top-0 left-10 dr">
-              <img src={star} alt="star" ref={starRef} className='star z-50'/>
+              <img src={star} alt="star" className='star z-50'/>
             </div>
           
             {/* Circle Image */}
             <img
               src={circle}
               alt="test"
-              className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] top-[-30px] md:top-[-50px] scale-125 absolute z-20"
+              className=" h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] top-[-30px] md:top-[-50px] scale-125 absolute z-20"
             />
             {/* Light Image */}
             <img
@@ -76,9 +72,9 @@ const Testimonial = () => {
           {/* Right Column */}
           <div className="col text-black px-6 py-4 md:py-8 lg:py-12 flex flex-col justify-center">
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black leading-snug">
+              <Best className="text-2xl md:text-3xl lg:text-4xl font-black leading-snug">
                 The best Financial Accounting App Ever!
-              </h2>
+              </Best>
               <Para className="text-sm md:text-base lg:text-lg pr-0 md:pr-16">
                 “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
                 In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit.
@@ -100,7 +96,7 @@ const Testimonial = () => {
             </div>
 
             {/* Profile Name */}
-            <p className="font-bold mt-4 text-base md:text-lg">Nick Jonas</p>
+            <p className="font-semibold mt-4 text-base md:text-lg">Nick Jonas</p>
             <div className="test absolute bottom-0 right-12">
               <img src={star} alt="star" ref={starRef} className='star z-50'/>
             </div>
@@ -118,6 +114,15 @@ export default Testimonial
 
 const Para = styled.p`
   font-family: 'poppins', sans-serif;
-  font-weight: 200;
-  color: #333;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: black;
+  font-size: 16px;
 `;
+const Best = styled.h2`
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+  font-size: 30px;
+`
