@@ -13,13 +13,14 @@ const Animation = () => {
       // For large screens and desktops
       gsap.to(".animation h1", {
         duration: 4,
-        x: "-310%",
+        x: "-320%",
         scrollTrigger: {
           scroller: "body",
           trigger: ".animation",
           start: "top 30%",
-          end: "top -50%",
+          end: "top -250%",
           scrub: 2,
+          markers: true,
           pin: true,
         },
       });
@@ -60,7 +61,7 @@ const Animation = () => {
           scroller: "body",
           trigger: ".animation",
           start: "top 30%",
-          end: "top -50%",
+          end: "top -150%",
           scrub: 2,
           pin: true,
         },

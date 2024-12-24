@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <>
       <section className="bg-gradient-to-r from-[#F8DA8A] to-pink-500  mt-28">
-        <div className="mx-auto bg-white py-6 ">
+        <div className="mx-auto  py-6 ">
           <div className="container py-4 px-6 h-full  sm:mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center sm:gap-6 md:gap-2 sm:border-b-2 border md:border-0">
             
             {/* First Column - Feedback Form */}

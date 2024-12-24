@@ -37,12 +37,6 @@ const HeroSection = () => {
       // scale: 0.2,
       // x: -500,
     })
-    // gsap.from(".circle", {
-    //   rotate: 720,
-    //   duration: 8,
-    //   repeat: -1,
-    //   stagger: 3
-    // })
   },[])
 
 
@@ -50,13 +44,13 @@ const HeroSection = () => {
    const style = 'sm:w-full';
 
   return (
-    <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[70px] my-auto" >
-      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] border-4 sm:pt-16  md:pt-12  mt-24">    
+    <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[70px] my-auto sm:overflow-hidden" >
+      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] sm:pt-16  md:pt-12  mt-24">    
         {/* Left Section */}
         <div className="relative left sm:flex sm:flex-col w-full lg:w-1/2 px-4 lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
           <div className="my-auto flex flex-col md:gap-[70px] sm:gap-[40px] p-4">
             <h1 className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-black bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text z-20' >
-              <span className="sm:mx-auto md:mx-auto lg:mx-auto poppins-medium">FinTech Enrollment and Advisory 2024-2025</span>
+              <Hero className="sm:mx-auto md:mx-auto lg:mx-auto capitalize">Fintech Enrollment and Advisory 2024-2025</Hero>
             </h1>
             <Para className=" text-sm md:text-base lg:text-lg text-justify text-black  max-w-[500px]  poppins-medium">
               Pursuing a career in finance is a dream for many, but the journey to 
@@ -123,4 +117,11 @@ const Para = styled.p`
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 16px;
+`
+
+const Hero = styled.h1`
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  font-family: 'poppins', sans-serif;
 `
