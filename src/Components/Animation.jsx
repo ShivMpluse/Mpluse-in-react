@@ -1,16 +1,18 @@
-import scrollTrigger from "gsap/all";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import logo from '../../public/images/788.png';
+import atm from '../../public/images/atmCard1.png';
 
-gsap.registerPlugin(scrollTrigger);
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Animation = () => {
   useEffect(() => {
-    // GSAP MatchMedia for responsive animations
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      // For large screens and desktops
       gsap.to(".animation h1", {
         duration: 4,
         x: "-320%",
@@ -19,44 +21,44 @@ const Animation = () => {
           trigger: ".animation",
           start: "top 30%",
           end: "top -250%",
-          scrub: 2,
+          scrub: 4,
           markers: true,
           pin: true,
         },
       });
 
       gsap.to(".leftCard", {
-        x: "-80%",
-        rotateY: -20,
+        x: "-90%",
+        rotate: -20,
         scrollTrigger: {
           scroller: "body",
           trigger: ".animation",
-          start: "top -30%",
+          start: "top -40%",
           end: "top -50%",
-          scrub: 2,
+          scrub: 4,
           pin: true,
         },
       });
 
       gsap.to(".rightCard", {
-        x: "80%",
-        rotateX: 20,
+        x: "90%",
+        rotate: 20,
         scrollTrigger: {
           scroller: "body",
           trigger: ".animation",
-          start: "top -30%",
+          start: "top -40%",
           end: "top -50%",
-          scrub: 2,
+          scrub: 4,
+          markers: true,
           pin: true,
         },
       });
     });
 
     mm.add("(max-width: 1023px)", () => {
-      // For tablets and smaller screens
       gsap.to(".animation h1", {
         duration: 4,
-        x: "-150%", // Less translation for smaller screens
+        x: "-150%",
         scrollTrigger: {
           scroller: "body",
           trigger: ".animation",
@@ -69,10 +71,9 @@ const Animation = () => {
     });
 
     mm.add("(max-width: 320px)", () => {
-      // For mobile screens
       gsap.to(".animation h1", {
         duration: 4,
-        x: "-100%", // Even less translation for small screens
+        x: "-100%",
         scrollTrigger: {
           scroller: "body",
           trigger: ".animation",
@@ -85,35 +86,35 @@ const Animation = () => {
     });
 
     return () => {
-      mm.revert(); // Revert animations when component unmounts
+      mm.revert();
     };
   }, []);
 
   return (
-    <div className=" mx-auto pb-1">
-      {/* Animation Header */}
-      <div className="animation w-full">
+    <div className="container mx-auto">
+      <div className="animation  h-[500px] w-full ">
         <div className="mx-auto overflow-hidden text-[6vh] sm:text-[10vh] md:text-[12vh] lg:text-[20vh] xl:text-[40vh] text-center uppercase font-bold tracking-widest whitespace-nowrap text-transparent/10">
           <h1>
-            <span className="bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text drop-shadow-2xl shadow-black">
+            <span className="bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text drop-shadow-2xl shadow-white">
               Welcome to the financial world
             </span>
           </h1>
         </div>
       </div>
-
-      {/* Animation Cards */}
-      {/* <div className="container animationCard mx-auto flex justify-center relative border h-80 w-full">
-        <div className="leftCard border w-[150px] sm:w-[200px] md:w-[250px] p-4 text-black bg-gray-300 absolute">
-          <h2>Name: Left!</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consequatur?</p>
+      <div className="container animationCard mx-auto flex justify-center relative border h-80 w-full">
+            <img src={logo} alt="Mpluse" className="h-10 w-32 mt-8" />
+        <div className="leftCard  w-[150px] sm:w-[200px] md:w-[250px] p-4 text-black absolute">
+          <img src={atm} alt="ATM" />
+          {/* <h2>Name: Left!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consequatur?</p> */}
         </div>
 
-        <div className="rightCard border w-[150px] sm:w-[200px] md:w-[250px] p-4 text-black bg-gray-300 absolute">
-          <h2>Name: Right!</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consequatur?</p>
+        <div className="rightCard  w-[150px] sm:w-[200px] md:w-[250px] p-4  absolute">
+        <img src={atm} alt="ATM" />
+          {/* <h2>Name: Right!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consequatur?</p> */}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
