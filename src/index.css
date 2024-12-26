@@ -18,3 +18,22 @@
   .slick-slide > div {
     margin: 0 10px;
   }
+  /* .border{
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid;
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+    border-image-slice: 2;
+    animation: gradient-rotate 3s linear infinite;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  @keyframes gradient-rotate {
+  0% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+  }
+  100% {
+    border-image-source: linear-gradient(405deg, red, orange, yellow, green, cyan, blue, violet);
+  }
+} */

@@ -1,0 +1,14 @@
+.leftCard,
+.rightCard {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftCard {
+  left: -100%;
+}
+
+.rightCard {
+  left: 100%; 
+}

@@ -14,7 +14,7 @@ import styled from "styled-components";
 const Footer = () => {
   return (
     <>
-      <section className="bg-gradient-to-r from-[#F8DA8A] to-pink-500  mt-28">
+      <section className="bg-gradient-to-r from-[#F8DA8A] to-pink-500/50 mt-28">
         <div className="mx-auto  py-6 ">
           <div className="container py-4 px-6 h-full  sm:mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center sm:gap-6 md:gap-2 sm:border-b-2 border md:border-0">
             
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
         {/* <span className="text-black flex justify-center items-center mt-2">dfghj</span> */}
       </section>
-      <div className="container mx-auto flex justify-center items-center text-black p-4 border">
+      <div className="container mx-auto flex justify-center items-center text-black/50 p-4 border">
         <Copy className="text-sm ">© 2025 Mpluse. All Rights Reserved.</Copy>
       </div>
 
