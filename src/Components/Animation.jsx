@@ -113,7 +113,7 @@ const Animation = () => {
         x: "-150%", // Adjusted for appropriate movement
         rotateY: 80,
         rotate: -20,
-        scrollTrigger: {
+        scrollTrigger: {  
           scroller: "body",
           trigger: ".animationCard", // Use the correct container
           start: "top 50%", // Adjusted start position
@@ -149,7 +149,7 @@ const Animation = () => {
         scrollTrigger: {
           scroller: "body",
           trigger: ".animationCard", // Use the correct container
-          start: "top 20%", // Adjusted start position
+          start: "top 50%", // Adjusted start position
           end: "top -50%", // Adjusted end position
           scrub: 2,
           // pin: true,
@@ -163,7 +163,7 @@ const Animation = () => {
         scrollTrigger: {
           scroller: "body",
           trigger: ".animationCard", // Use the correct container
-          start: "top 20%", // Adjusted start position
+          start: "top 50%", // Adjusted start position
           end: "top -50%", // Adjusted end position
           scrub: 2,
           // pin: true,
