@@ -180,7 +180,7 @@ const Animation = () => {
 
   return (
     <div className=" mx-auto relative">
-      <div className="animation flex items-center sm:h-[250px] md:h-[400px] lg:h-[500px] w-full border-4">
+      <div className="animation flex items-center sm:h-[250px] md:h-[400px] lg:h-[500px] w-full ">
         <div className="mx-auto overflow-hidden text-[6vh] sm:text-[150px] md:text-[250px] lg:text-[20vh] xl:text-[40vh] text-center uppercase font-bold tracking-widest whitespace-nowrap text-transparent/10">
           <h1>
             <span className="bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text drop-shadow-2xl shadow-white">
