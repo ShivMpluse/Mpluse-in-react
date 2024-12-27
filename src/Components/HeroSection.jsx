@@ -44,11 +44,11 @@ const HeroSection = () => {
    const style = 'sm:w-full';
 
   return (
-    <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[70px] my-auto sm:overflow-hidden" >
+    <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[20px] my-auto sm:overflow-hidden" >
       <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] sm:pt-16  md:pt-12  mt-24">    
         {/* Left Section */}
         <div className="relative left sm:flex sm:flex-col w-full lg:w-1/2 px-4 lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
-          <div className="my-auto flex flex-col md:gap-[70px] sm:gap-[40px] p-4">
+          <div className=" flex flex-col md:gap-[70px] sm:gap-[40px] p-4">
             <h1 className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-black bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text z-20' >
               <Hero className="sm:mx-auto md:mx-auto lg:mx-auto capitalize">Fintech Enrollment and Advisory 2024-2025</Hero>
             </h1>
@@ -64,7 +64,7 @@ const HeroSection = () => {
                 <img src={blur} alt="eff" className="backlight top-[-600px] left-10 rotate-180 opacity-50"/>
               </div>
               <div className="star h-16 w-16">
-                <img src={star} alt="star" className="top-6 left-10 absolute" ref={backLightRef}/>
+                <img src={star} alt="star" className="top-1 left-10 absolute" ref={backLightRef}/>
               </div>
             </div>
             
@@ -84,21 +84,6 @@ const HeroSection = () => {
           <div className="vfx relative ">
             <img  ref={backLightRef} src={blur} alt="light" className=" absolute translate-x-[25%] translate-y-[8%] scale-150 opacity-50" />
             <img src={card} alt="circle" className="circle z-10 h-[550px] translate-x-[10%] translate-y-[-10%] scale-95" />
-            {/* <img
-              src={phone}
-              alt="iphone"
-              className=" absolute h-[700px] top-[-8%] left-[55%] translate-x-[-50%] z-30 scale-90"
-            />
-            <img
-              src={phone}
-              alt="iphone"
-              className=" absolute h-[700px] top-[-5%] left-[65%] translate-x-[-50%] z-20 scale-90"
-            />
-            <img
-              src={phone}
-              alt="iphone"
-              className=" absolute h-[700px] top-[-12%] left-[45%] translate-x-[-50%] z-40 scale-90"
-            /> */}
           </div>
           <div className="star">
             <img src={star} alt="star" className="bottom-6 right-10 absolute" ref={backLightRef}/>
