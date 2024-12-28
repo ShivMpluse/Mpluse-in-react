@@ -45,12 +45,12 @@ const HeroSection = () => {
 
   return (
     <section className="hero flex items-center mx-auto w-full h-screen sm:flex-col mt-[20px] my-auto sm:overflow-hidden" >
-      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] sm:pt-16  md:pt-12  mt-24">    
+      <div className="main mx-auto container flex flex-wrap justify-center sm:mx-auto md:mx-auto lg:mx-auto max-h-[85vh] sm:pt-16  md:pt-12  mt-32">    
         {/* Left Section */}
-        <div className="relative left sm:flex sm:flex-col w-full lg:w-1/2 px-4 lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
-          <div className=" flex flex-col md:gap-[70px] sm:gap-[40px] p-4">
+        <div className="relative left sm:flex sm:flex-col w-full lg:w-1/2  lg:px-8 sm:mx-auto md:mx-auto lg:mx-auto  ">
+          <div className=" flex flex-col md:gap-[70px] sm:gap-10 sm:p-1 md:p-4">
             <h1 className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-black bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text z-20' >
-              <Hero className="sm:mx-auto md:mx-auto lg:mx-auto capitalize">Fintech Enrollment and Advisory 2024-2025</Hero>
+              <Hero className="sm:mx-auto md:mx-auto lg:mx-auto capitalize tracking-tighter">Fintech Enrollment and Advisory 2024-2025</Hero>
             </h1>
             <Para className=" text-sm md:text-base lg:text-lg text-justify text-black  max-w-[500px]  poppins-medium">
               Pursuing a career in finance is a dream for many, but the journey to 

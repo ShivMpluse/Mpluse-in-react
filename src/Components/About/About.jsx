@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import styled from "styled-components";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +58,7 @@ function About() {
         ))}
       </div>
       <div className="h1 py-10 flex flex-col gap-3 container sm:mx-auto md:mx-auto px-4">
-        <H1 className="lg:text-6xl text-3xl font-semibold text-blue-950">Our Proven Expertise: Your Financial Success Starts Here!</H1>
+        <H1 className="lg:text-6xl text-3xl font-semibold text-blue-950 capitalize">Our Proven Expertise: Your Financial Success Starts Here!</H1>
         <h1 className="lg:text-6xl text-3xl">
           <span className="span text-transparent bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-500 bg-clip-text">Join Our Thriving Community of Future Fintech Leaders</span>
         </h1>

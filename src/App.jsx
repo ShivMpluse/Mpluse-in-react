@@ -16,7 +16,7 @@ import Animation from "./Components/Animation"
 function App() {
 
   return (    
-    <section className="App  bg-fixed" >
+    <section className="App " >
         <Navigation />
         <HeroSection  />
         <Animation />

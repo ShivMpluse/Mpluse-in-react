@@ -40,9 +40,9 @@ const AboutSection = () => {
 
 
   return (
-    <section className="text-black md:mx-auto  mx-auto px-4 bg-white">
+    <section className="text-black md:mx-auto  mx-auto md:px-4 bg-white">
         <div className="container about mx-auto grid lg:grid-cols-2 sm:grid-cols-1 justify-between items-center flex-wrap sm:mx-auto">
-            <div className="col grid grid-col-2 gap-4">
+            <div className="col grid grid-col-2 gap-4 sm:px-2 md:px-0">
                 <div className="row1  gap-12 grid sm:grid-col-1 md:grid-cols-2">
                     <Increment title={count} description='Successful Admission' className='poppins-medium'/>
                     <Increment title={count} description='Successful Admission'/>

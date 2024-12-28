@@ -31,8 +31,11 @@ const card = [
 export const Features = () => {
     return (
         <section className="container sm:mx-auto overflow-hidden sm:px-2">
-            <div className="main">
-                <h1 className="text-transparent bg-gradient-to-r from-[#F5E197] to-[#E6217B] bg-clip-text"><span>ffffffddd</span></h1>
+            <div className="main flex flex-col justify-center text-xl p-4">
+                <div className="flex p-4">
+                    <h1 className="mx-auto text-transparent bg-gradient-to-r from-[#F5E197] to-[#E6217B] bg-clip-text"><span>Awarded</span></h1>
+                </div>
+                <div className="h-1 w-full bg-gradient-to-r from-[#95F7AC] via-[#8647D7] to-[#4F28A7]"></div>
             </div>
             <div className="container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {card.map((value) => {

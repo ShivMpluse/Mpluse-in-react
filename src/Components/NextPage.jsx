@@ -24,7 +24,7 @@ const NextPage = () => {
                     <Info />
                 </div>
                 <div className="img sm:py-4 bg-cover object-cover bg-no-repeat rounded-xl flex justify-center overflow-hidden" >
-                    <img src={poster} alt="Poster"  className='md:scale-[2.2]'/>
+                    <img src={poster} alt="Poster"  className='sm:scale-[1.5] md:scale-[2]'/>
                     {/* <DotLottieReact  autoplay loop/> */}
                 </div>
             </div>
