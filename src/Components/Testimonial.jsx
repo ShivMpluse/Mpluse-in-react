@@ -40,7 +40,7 @@ const Testimonial = () => {
 
       {/* Main Content */}
       <div className="main mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  sm:px-2 lg:px-12">
           {/* Left Column */}
           <div className="relative hidden md:flex justify-center items-center">
             <div className="test absolute top-0 left-10">
@@ -61,7 +61,7 @@ const Testimonial = () => {
           </div>
 
           {/* Right Column */}
-          <div className="col text-black px-4 py-6 sm:py-8 lg:py-12 flex flex-col justify-center">
+          <div className="col text-black py-6 sm:py-8 lg:py-12 flex flex-col justify-center">
             <div className="space-y-6">
               <Best className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-snug">
                 The Best Financial Accounting App Ever!
