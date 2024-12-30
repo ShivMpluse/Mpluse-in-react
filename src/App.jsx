@@ -1,34 +1,36 @@
-import About from "./Components/About/About"
-import HeroSection from "./Components/HeroSection"
-import Navigation from "./Components/Navigation"
-import AboutSection from "./Components/AboutSection"
-import Carousel from "./Components/Carousel"
-import NextPage from "./Components/NextPage"
-import Testimonial from "./Components/Testimonial"
-import { Features } from "./Components/Features"
-import Questions from "./Components/Questions"
-import Footer from "./Components/Footer/Footer"
-import Animation from "./Components/Animation"
-// import Slides from "./Components/Slides"
 
+import Home from "./Pages/Home"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Error from './Pages/Error'
+import AppLayout from "./Components/AppLayout";
 // style={{ backgroundImage: `url(${hero})`}}
+
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "/",  
+          element: <Home />,
+
+        }
+      ]
+    }
+  ]);
+
+
+
 
 function App() {
 
   return (    
-    <section className="App " >
-        <Navigation />
-        <HeroSection  />
-        <Animation />
-        <About />
-        <AboutSection />
-        <Carousel />
-        <Testimonial />
-        <NextPage />
-        <Features />
-        <Questions />
-        <Footer />
-    </section>
+    <RouterProvider router={router}>
+      <Home />
+    </RouterProvider>
+        
   )
 }
 
