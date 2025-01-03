@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import BTN from "../Components/BTN/BTN";
 import gsap from "gsap";
@@ -13,7 +14,7 @@ import styled from "styled-components";
 
 // bg-[url${blur}] bg-cover bg-center h-64 w-full
 
-const HeroSection = () => {
+const HeroSection = ({count, fun}) => {
 
   const backLightRef = useRef() 
 
@@ -67,9 +68,11 @@ const HeroSection = () => {
                 <img src={star} alt="star" className="top-1 left-10 absolute" ref={backLightRef}/>
               </div>
             </div>
-            
-            <div className="btn sm:w-full">
+            {/* *************************************************************************************** */}
+            <div className="btn sm:w-full flex gap-4">
               <BTN text="Contact Us" className={`sm:w-full ${style}`}/>
+              <div className="box h-8 w-32 border-2 border-black bg-gray-200 ">{count}</div>
+              <button className="px-5 py-3 border-2 border-black" onClick={fun}>Increment</button>
             </div>
           </div>
         </div>

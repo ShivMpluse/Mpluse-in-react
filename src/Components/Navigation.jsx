@@ -3,6 +3,7 @@ import logo from "../../public/images/788.png";
 import BTN from "./BTN/BTN";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
 import { NavLink } from "react-router";
+import Toggle from "./Toggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Navigation = () => {
           alt="logo"
           className="logo p-2 h-[60px] md:flex lg:flex my-auto items-center"
         />
+        <Toggle />
 
         {/* Menu */}
         <div className="menu text-black flex">
@@ -49,7 +51,7 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "font-thin text-red-300 box-border"
-                    : "hover:border-b-2 border-black font-thin text-black box-border"
+                    : " border-black font-thin text-black box-border"
                 }
               >
                 Home
@@ -61,7 +63,7 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "font-thin text-red-300 box-border"
-                    : "hover:border-b-2 border-black font-thin text-black box-border"
+                    : " border-black font-thin text-black box-border"
                 }
               >
                 Features
@@ -73,7 +75,7 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "font-thin text-red-300 box-border"
-                    : "hover:border-b-2 border-black font-thin text-black box-border"
+                    : " border-black font-thin text-black box-border"
                 }
               >
                 Pricing
@@ -85,7 +87,7 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "font-thin text-red-300 box-border"
-                    : "hover:border-b-2 border-black font-thin text-black box-border"
+                    : " border-black font-thin text-black box-border"
                 }
               >
                 About
@@ -97,7 +99,7 @@ const Navigation = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "font-thin text-red-300 box-border"
-                    : "hover:border-b-2 border-black font-thin text-black box-border"
+                    : " border-black font-thin text-black box-border"
                 }
               >
                 Services
